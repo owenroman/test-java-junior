@@ -34,11 +34,11 @@ public class ejercicio {
 		int aux=Integer.parseInt(letra);
 		for (int i = 0; i < 10; i++) {	
 			if ( aux==i) {
-						System.out.println("El bucle continua");
-						break;
-				} else {
-						System.out.println(prefijo + i);
-				}
+				System.out.println("El bucle continua");
+				break;
+			} else {
+				System.out.println(prefijo + i);
+			}
 		}
 	}
 }
