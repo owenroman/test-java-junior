@@ -1,16 +1,5 @@
 # Ejercicio para evaluación de candidatos para Developers Java - Nivel Junior
 
-## Requisitos
-
-* Conocimientos básicos del lenguaje Java
-* IDE favorito
-* Git
-* Muchas ganas y curiosidad 💪
-
-# Descripción de la Evaluación
-
-Se proveen unos ejercicios de distinta dificultad. Leer antentamente lo que se pide en cada ejercicio y empezar por el que sea más sencillo.
-
 # 1. Análisis e Interpretación de Código
 
 Analizar el siguiente bloque de código ¿Es un programa Java válido? ¿Compila? Si es así, indicar el resultado de su ejecución y explicar por qué el resultado es el indicado
@@ -27,6 +16,33 @@ Analizar el siguiente bloque de código ¿Es un programa Java válido? ¿Compila
         }
     }
 ```
+El codigo compila bien pero no cumple su cometido, que sería finalizar el programa cuando el índice 'i' llegue a 6.
+Esto porque la variable "letra", que contiene la condición 'if' como un parámetro, es de tipo string y no se hace una correcta conversión de datos.<br>
+Una solución a este problema podría ser cambiar el tipo de variable para "letra",o bien utilizar la siguiente sintaxis de conversion de datos:<br><br>
+
+```
+int <IntVariableName> = Integer.parseInt (<StringVariableName>);
+``` 
+
+Adjunto código de posible solución.
+
+```
+public class ejercicio {
+	public static void main (String[]Args) {
+		String letra = "6";
+		String prefijo = "Iteracion nro ";
+		int aux=Integer.parseInt(letra);
+		for (int i = 0; i < 10; i++) {	
+			if ( aux==i) {
+						System.out.println("El bucle continua");
+						break;
+				} else {
+						System.out.println(prefijo + i);
+				}
+		}
+	}
+}
+``` 
 
 # 2. Modelado OO
 
