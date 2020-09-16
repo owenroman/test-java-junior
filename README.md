@@ -95,12 +95,4 @@ CREATE TABLE potluck
 )
 ```
 
-# Forma de entrega
 
-Se debe hacer un fork de este repositorio, solucionar en ese fork los ejercicios y luego hacer un push a dicho repositorio.
-
-El ejercicio 1 se podría solucionar en un archivo `ejercicio_01.md`.
-
-Finalmente, enviar un email con la URL del repositorio forkeado a la persona que te envió este test.
-
-Muchas gracias y buena suerte! ❤️️
